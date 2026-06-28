@@ -32,10 +32,10 @@ export const team: TeamMember[] = [
   {
     name: "Nanda Valeri",
     role: "PM / Business Strategist",
-    bio: "Memimpin riset ekosistem yang menemukan posisi unik Pantik sebagai activation layer. Menganalisis 83.363 profil SIMKOPDES kosong, membangun narasi 'raknya kosong, kami yang ngisi', dan merancang Two-Tier Activation Model serta logika Indeks Nyala anti-gaming.",
-    skills: ["Product Strategy", "Market Research", "Business Analysis", "UX Research", "Figma"],
+    bio: "Memenangkan Rp20M+ sponsorship sebagai Koordinator Divisi Sponsorship Fikom Night. Liaison Officer Garuda Hacks 6.0 (hackathon terbesar Asia Tenggara). Workshop Speaker AI Lab untuk 50+ siswa SMA. KAMI UMN Scholarship Awardee — dipilih berdasarkan prestasi akademik dan kontribusi organisasi.",
+    skills: ["Public Speaking", "Negotiation", "Event Management", "UX Design", "React", "React Native"],
     photo: "",
-    github: "[github.com/nanda-valeri]",
+    github: "https://github.com/alestuff404",
     linkedin: "[linkedin.com/in/nanda-valeri]",
   },
 ];
