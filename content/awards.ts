@@ -12,7 +12,7 @@ export const awards: Award[] = [
     tingkat: "Juara 1 Nasional — Web Development",
     tahun: 2026,
     peran: "Lintang Balakosa Ardhana & Nanda Valeri",
-    dampak: "Mengalahkan tim dari ITB dan Binus University di kompetisi Web Development tingkat nasional antar mahasiswa.",
+    dampak: "Mengalahkan tim dari universitas negeri di kompetisi Web Development tingkat nasional antar mahasiswa.",
   },
   {
     namaLomba: "CIMB Niaga Pitching Day × UMN",
