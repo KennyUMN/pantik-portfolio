@@ -19,24 +19,25 @@ export const site = {
   taglineDefault: "Kami menyalakan yang sudah dibangun.",
   headline: "Kami menyalakan koperasi yang sudah dibangun negara.",
   subheadline:
-    "Tim Bara, peserta Hackathon Digital Cooperatives Expo 2026 (Kemenkop RI x PEBS FEB UI), membangun Pantik sebagai activation layer bagi 83.363 koperasi merah putih.",
+    "Bara adalah tim peserta Hackathon Digital Cooperatives Expo 2026 bersama Kemenkop RI dan PEBS FEB UI. Kami membangun Pantik, lapisan aktivasi yang menyalakan koperasi desa merah putih yang sudah terdaftar namun belum bergerak.",
   email: "kennyvws1@gmail.com",
   meta: {
-    title: "Bara — Portofolio Teknis Tim",
+    title: "Bara · Portofolio Teknis Tim",
     description:
-      "Tim yang memadukan strategi produk dan rekayasa teknis untuk ekonomi kerakyatan. Pembangun Pantik, lapisan aktivasi koperasi desa.",
+      "Bara membangun Pantik, lapisan aktivasi yang menyalakan koperasi desa merah putih pada Hackathon Digital Cooperatives Expo 2026.",
     url: "https://pantik-portfolio.vercel.app",
     ogImage: "/og.png",
   },
   heroStats: [
-    { value: "MVP", label: "Pantik siap demo" },
-    { value: "3", label: "Anggota, peran seimbang" },
-    { value: "83k+", label: "Koperasi yang bisa dijangkau" },
-    { value: "2", label: "Tier aktivasi terbukti" },
+    { value: "Juara 1", label: "Web Development nasional, I/O Festival 2026" },
+    { value: "MVP", label: "Pantik siap didemokan" },
+    { value: "3", label: "Peran yang saling melengkapi" },
+    { value: "83.363", label: "Koperasi merah putih yang disasar" },
   ] satisfies StatItem[],
   nav: [
     { label: "Mengapa Kami", href: "#why-us" },
     { label: "Tim", href: "#team" },
+    { label: "Prestasi", href: "#awards" },
     { label: "Pantik", href: "#flagship" },
     { label: "Kapabilitas", href: "#capabilities" },
     { label: "Kontak", href: "#contact" },

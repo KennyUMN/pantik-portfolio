@@ -16,22 +16,22 @@ export const projects: Project[] = [
   {
     judul: "Pantik × Indeks Nyala",
     ringkas:
-      "Activation layer dua tingkat yang menyalakan koperasi desa yang sudah terdaftar tapi belum beroperasi — mengisi data SIMKOPDES, memfunnel supply ke CoopTrade, dan membuka akses modal kerja.",
+      "Lapisan aktivasi dua tingkat yang menyalakan koperasi desa terdaftar menjadi penjualan pertama yang terbukti dibayar.",
     problem:
-      "83.363 koperasi terdaftar di SIMKOPDES, miliaran rupiah infrastruktur digital sudah dibangun Kemenkop — tapi raknya kosong. Koperasi Pengiringan (Pemalang, Jateng): 9 komoditas tercatat, semua nilai 0. 0 anggota dari 12.944 penduduk. Gas sudah ada, belum ada yang memantik.",
+      "Registrasi koperasi nyaris tuntas dan infrastruktur digitalnya sudah menelan miliaran rupiah, tetapi raknya kosong. Koperasi Pengiringan di Pemalang mencatat sembilan komoditas dengan nilai nol pada semuanya, dan nol anggota dari 12.944 penduduk desa. Baranya sudah ada. Belum ada yang memantiknya.",
     solusi:
-      "Pantik adalah activation layer, bukan platform baru. Kami tidak bersaing dengan SIMKOPDES atau CoopTrade — kami yang membuat keduanya benar-benar berjalan. Two-Tier model: Tier-0 mengisi data SIMKOPDES dan membuktikan denyut pertama via QRIS; Tier-1 auto-posting ke CoopTrade dan generate PO Dossier untuk bank.",
+      "Pantik bekerja sebagai lapisan aktivasi di atas ekosistem yang sudah ada. Alih alih menyaingi Simkopdes atau CoopTrade, Pantik membuat keduanya benar benar berjalan. Pendamping memakainya untuk memilih koperasi yang paling perlu dinyalakan, memantik transaksi pertamanya, lalu menilai koperasi hanya dari uang yang benar benar masuk.",
     mekanisme: [
-      "Peta Panas Aktivasi — visualisasi per-desa dari dorman (abu) ke denyut (kuning) ke nyala (oranye) ke sehat (hijau)",
-      "1-Click SIMKOPDES Data Population — auto-generate CSV/JSON profil koperasi, potensi desa, unit usaha untuk upload ke website SIMKOPDES yang kosong",
-      "Indeks Nyala Engine — skor 0–100 per koperasi; Tier-0 cap 30 (penjualan QRIS), Tier-1 penuh (settlement counterparty via CoopTrade)",
-      "CoopTrade Auto-Posting + Domestic Matching — funnel supply ke marketplace Kemenkop + linkage ke dapur MBG/SPPG, Bulog, pabrik lokal",
-      "PO Financing Dossier Generator — auto-generate PDF nilai kontrak + proyeksi cashflow 30/60/90 hari untuk pengajuan ke bank Himbara",
+      "Peta Triage Aktivasi. Mengurutkan koperasi menurut tingkat kedormanan, dari abu untuk dorman, kuning untuk denyut, oranye untuk nyala, hingga hijau untuk sehat. Pendamping langsung tahu siapa yang harus didatangi lebih dulu.",
+      "Transaksi Tier-1 Terbayar. Mencocokkan koperasi dengan pembeli institusional seperti dapur SPPG dan MBG, Bulog, atau pabrik lokal, lalu memfunnel pasokannya ke CoopTrade.",
+      "Indeks Nyala. Skor nol sampai seratus per koperasi. Tier-0 dari penjualan ritel ber-QRIS dengan batas tertentu, Tier-1 penuh dari settlement pembeli institusional. Skor hanya naik dari uang yang benar benar masuk, dihitung dari penjualan dan settlement.",
+      "PO Financing Dossier. Saat kontrak terbentuk, sistem menyusun dokumen nilai kontrak dan proyeksi arus kas 30, 60, dan 90 hari untuk diajukan ke bank Himbara.",
+      "Pengisian Data dan Kepatuhan Otomatis. Profil Simkopdes yang kosong ikut terisi dan artefak kepatuhan Permenkop 2/2024 tergenerate sebagai hasil sampingan dari setiap aktivasi.",
     ],
     dampak:
-      "Setiap koperasi yang diaktivasi Pantik = website SIMKOPDES terisi + komoditas masuk CoopTrade + Indeks Nyala bisa dimonitor Kemenkop + modal kerja terbuka via PO Dossier. Target awal: 4.000 PHTC × 20 koperasi = 80.000 koperasi terjangkau tanpa harus membangun user base dari nol.",
+      "Setiap koperasi yang dinyalakan Pantik berarti profil Simkopdesnya terisi, komoditasnya masuk CoopTrade, keaktifannya terukur lewat Indeks Nyala, dan akses modal kerjanya terbuka lewat PO Dossier. Dengan 4.000 pendamping yang masing masing memegang sekitar 20 koperasi, sekitar 80.000 koperasi dapat dijangkau tanpa membangun basis pengguna dari nol.",
     peranTim:
-      "Eksplorasi langsung seluruh ekosistem simkopdes.go.id, CoopTrade, dan CorpU. Desain Two-Tier Activation Model dan Indeks Nyala anti-gaming (belajar dari kegagalan TaniFund/eFishery). Implementasi MVP penuh selama hackathon 2 hari.",
+      "Tim menelusuri langsung ekosistem simkopdes.go.id, CoopTrade, dan CorpU, merancang model aktivasi dua tingkat dan Indeks Nyala yang tahan kecurangan dengan belajar dari kegagalan TaniFund dan eFishery, lalu membangun MVP penuh selama dua hari hackathon.",
     stack: ["Next.js", "TypeScript", "FastAPI", "Python", "PostgreSQL", "NetworkX", "Leaflet.js", "TailwindCSS"],
     demo: "[link-demo-pantik]",
     github: "https://github.com/KennyUMN/pantik-portfolio",

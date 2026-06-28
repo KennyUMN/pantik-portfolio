@@ -22,7 +22,7 @@ export function Contact() {
               Mari bicara tentang koperasi yang menyala.
             </h2>
             <p className="text-[17px] text-secondary mb-2 leading-relaxed">
-              Ada pertanyaan tentang Pantik, ingin berdiskusi lebih lanjut, atau ingin melihat demo secara langsung?
+              Punya pertanyaan tentang Pantik, ingin berdiskusi, atau ingin melihat demonya langsung?
             </p>
             <p className="text-base text-secondary mb-10">
               Tim kami siap berbicara.

@@ -29,10 +29,10 @@ export function HowWeWork() {
     <Section id="how-we-work">
       <Reveal>
         <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-2">
-          Disiplin eksekusi, bukan retorika.
+          Cara kami menuntaskan.
         </h2>
         <p className="text-[17px] text-secondary max-w-xl mb-14 leading-relaxed">
-          Proses yang berulang dan terukur membuat juri percaya tim bisa menyelesaikan, bukan hanya memulai.
+          Proses yang berulang dan terukur. Inilah yang membuat juri yakin tim mampu menuntaskan apa yang dimulai.
         </p>
       </Reveal>
 

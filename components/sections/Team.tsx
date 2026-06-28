@@ -65,7 +65,7 @@ export function Team() {
           Komposisi yang sengaja dirancang.
         </h2>
         <p className="text-[17px] text-secondary max-w-2xl mb-12 leading-relaxed">
-          Kemudi bisnis dan kedalaman teknis dalam satu tim — itulah yang kriteria lomba minta, dan itulah yang kami miliki.
+          Kemudi bisnis dan kedalaman teknis berada dalam satu tim. Itulah yang diminta kriteria lomba, dan itulah yang kami miliki.
         </p>
       </Reveal>
 

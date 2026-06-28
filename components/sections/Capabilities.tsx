@@ -16,10 +16,10 @@ export function Capabilities() {
     <Section id="capabilities">
       <Reveal>
         <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-2">
-          Eksekusi end-to-end, dari produk ke infrastruktur.
+          Eksekusi dari hulu ke hilir, dari produk sampai infrastruktur.
         </h2>
         <p className="text-[17px] text-secondary max-w-2xl mb-10 leading-relaxed">
-          Juri teknis menilai apakah hero loop Pantik realistis dibangun tim ini. Berikut buktinya.
+          Juri teknis menilai apakah hero loop Pantik realistis dibangun tim ini. Inilah buktinya.
         </p>
       </Reveal>
 

@@ -96,7 +96,7 @@ export default function OgImage() {
               fontWeight: 500,
             }}
           >
-            Pantik × Indeks Nyala — Lapisan aktivasi koperasi desa
+            Pantik × Indeks Nyala. Lapisan aktivasi koperasi desa.
           </div>
         </div>
 

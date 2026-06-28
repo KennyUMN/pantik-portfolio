@@ -9,9 +9,12 @@ export function Awards() {
   return (
     <Section id="awards" subtle>
       <Reveal>
-        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-12">
+        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-2">
           Track record yang dapat diperiksa.
         </h2>
+        <p className="text-[17px] text-secondary max-w-2xl mb-12 leading-relaxed">
+          Bukti bahwa tim ini terbiasa menuntaskan dan menang.
+        </p>
       </Reveal>
 
       <div className="space-y-3">
@@ -25,7 +28,7 @@ export function Awards() {
                 <div>
                   <p className="font-heading font-semibold text-ink">{award.namaLomba}</p>
                   <p className="mt-1 text-sm text-secondary">
-                    {award.peran} — {award.dampak}
+                    <span className="font-medium text-ink">{award.peran}.</span> {award.dampak}
                   </p>
                 </div>
               </div>

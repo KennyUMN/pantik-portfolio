@@ -17,7 +17,7 @@ export function WhyUs() {
         <SectionHeader
           eyebrow="Mengapa Tim Ini"
           heading="Tiga hal yang jarang berkumpul dalam satu tim."
-          lead="Juri menilai apakah tim ini yang paling layak membangun dan menyerahkan solusi ini. Inilah jawabannya."
+          lead="Juri menilai apakah tim ini yang paling layak membangun dan menyerahkan solusi ini. Berikut jawabannya."
         />
       </Reveal>
 

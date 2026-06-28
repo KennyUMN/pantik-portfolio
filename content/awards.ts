@@ -9,17 +9,17 @@ export interface Award {
 export const awards: Award[] = [
   {
     namaLomba: "I/O Festival 2026",
-    tingkat: "Juara 1 Nasional — Web Development",
+    tingkat: "Juara 1 Nasional, Web Development",
     tahun: 2026,
-    peran: "Lintang Balakosa Ardhana & Nanda Valeri",
-    dampak: "Mengalahkan tim dari universitas negeri di kompetisi Web Development tingkat nasional antar mahasiswa.",
+    peran: "Lintang Balakosa Ardhana dan Nanda Valeri",
+    dampak: "Menjuarai kompetisi Web Development tingkat nasional antar mahasiswa dan mengungguli tim dari universitas negeri.",
   },
   {
     namaLomba: "CIMB Niaga Pitching Day × UMN",
     tingkat: "Juara 2 Internal",
     tahun: 2025,
-    peran: "Lintang Balakosa Ardhana & Nanda Valeri",
-    dampak: "Membangun aplikasi mobile fungsional (bukan prototipe) untuk pembukaan rekening digital CIMB Niaga. UX design dengan warna ramah lansia tanpa mengorbankan brand identity.",
+    peran: "Lintang Balakosa Ardhana dan Nanda Valeri",
+    dampak: "Membangun aplikasi mobile fungsional untuk pembukaan rekening digital CIMB Niaga, dengan desain antarmuka yang ramah lansia tanpa mengorbankan identitas merek.",
   },
   {
     namaLomba: "Diponegoro Capital Market Days (DCMD)",
@@ -33,6 +33,6 @@ export const awards: Award[] = [
     tingkat: "Juara 3 Nasional",
     tahun: 2025,
     peran: "Lintang Balakosa Ardhana",
-    dampak: "Analisis pola pemesanan dan pembatalan hotel; diakui dalam storytelling dan kedalaman analitik.",
+    dampak: "Menganalisis pola pemesanan dan pembatalan hotel, diakui atas kedalaman analitik dan kekuatan penyajian datanya.",
   },
 ];

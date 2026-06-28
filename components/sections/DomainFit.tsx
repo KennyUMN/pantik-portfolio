@@ -7,17 +7,17 @@ const regulasiItems = [
   {
     icon: Scroll,
     label: "Perpres 115/2025",
-    desc: "Kerangka transformasi digital koperasi. Fondasi kebijakan yang Pantik diperkuat, bukan disaingi.",
+    desc: "Kerangka yang mewajibkan rantai pasok Makan Bergizi Gratis menyerap produk koperasi lokal. Pantik mengaktifkan koperasi menuju kewajiban itu.",
   },
   {
     icon: Scale,
     label: "Permenkop 2/2024",
-    desc: "Regulasi operasional koperasi digital. Setiap mekanisme Pantik selaras dengan ketentuan ini.",
+    desc: "Regulasi pelaporan koperasi digital. Setiap artefak Pantik selaras dengan ketentuannya dan tergenerate otomatis.",
   },
   {
     icon: Handshake,
-    label: "Lane TPM / HAKI",
-    desc: "Jalur masuk ekosistem resmi Kemenkop. Tim memahami implikasi pengalihan HAKI dan persyaratan lane TPM.",
+    label: "Lane TPM dan HAKI",
+    desc: "Jalur masuk resmi ke ekosistem Kemenkop. Tim memahami implikasi pengalihan HAKI dan syarat lane Technology Provider Member.",
   },
 ];
 
@@ -44,7 +44,7 @@ export function DomainFit() {
       <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
         {/* Left: evidence cards (stacked) */}
         <div className="space-y-4">
-          <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-muted-dark mb-5">
+          <p className="text-[13px] font-semibold text-ink mb-5">
             Riset Lapangan
           </p>
           {domain.buktiRiset.map((poin, i) => {
@@ -67,7 +67,7 @@ export function DomainFit() {
           })}
           <Reveal delay={0.25}>
             <p className="text-xs italic text-secondary pt-1 pl-1">
-              Sinyal paling membedakan di mata juri kementerian adalah tim yang paham regulasi, bukan hanya yang bisa koding.
+              Sinyal yang paling membedakan di mata juri kementerian adalah tim yang memahami regulasi, bukan sekadar tim yang bisa menulis kode.
             </p>
           </Reveal>
         </div>
@@ -75,7 +75,7 @@ export function DomainFit() {
         {/* Right: regulation timeline */}
         <Reveal delay={0.1}>
           <div>
-            <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-muted-dark mb-5">
+            <p className="text-[13px] font-semibold text-ink mb-5">
               Regulasi yang Kami Pahami
             </p>
             <div className="relative pl-5 border-l-2 border-line space-y-0">

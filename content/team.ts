@@ -14,7 +14,7 @@ export const team: TeamMember[] = [
   {
     name: "Lintang Balakosa Ardhana",
     role: "Fullstack Developer",
-    bio: "Membangun platform dari nol: Bisasinema (Coursera-style LMS + Midtrans, Rp20M+ tiket terjual), Brako Trace OS (digitalisasi pipeline kopi cherry-to-warehouse), dan SaaS multi-tenant Tera untuk ekspor specialty coffee. Tech Lead & APM di dua perusahaan aktif.",
+    bio: "Membangun produk dari nol sampai rilis. Bisasinema, platform belajar bergaya Coursera dengan pembayaran Midtrans, telah menjual tiket lebih dari Rp20 juta. Brako Trace OS mendigitalkan alur kopi dari cherry sampai gudang. Tera adalah SaaS multi-tenant untuk ekspor kopi specialty. Kini menjabat Tech Lead dan Associate PM di dua perusahaan yang berjalan.",
     skills: ["Next.js", "FastAPI", "TypeScript", "PostgreSQL", "React", "NestJS", "Python", "Docker"],
     photo: "",
     github: "https://github.com/codezeros18",
@@ -23,7 +23,7 @@ export const team: TeamMember[] = [
   {
     name: "Kenny Valent Winalda Sembiring",
     role: "AI Engineer",
-    bio: "Membangun infrastruktur AI lokal: FinRAG-ID (RAG pipeline hybrid BM25 + BGE-M3 untuk dokumen keuangan Indonesia), PPE Detection System (YOLOv9c semi-supervised), dan self-hosted AI homeserver (Ollama + OpenRouter + Tailscale). Fokus di LLM infrastructure dan local-first AI.",
+    bio: "Membangun infrastruktur AI yang berjalan mandiri. FinRAG-ID adalah pipeline RAG hibrida BM25 dan BGE-M3 untuk dokumen keuangan Indonesia. PPE Detection System memakai YOLOv9c dengan pendekatan semi-supervised. Ia juga menjalankan homeserver AI sendiri berbasis Ollama, OpenRouter, dan Tailscale, dengan fokus pada infrastruktur LLM yang local-first.",
     skills: ["Python", "LlamaIndex", "RAG", "YOLOv9", "Ollama", "Docker", "FastAPI", "RAGAS"],
     photo: "",
     github: "https://github.com/KennyUMN",
@@ -32,7 +32,7 @@ export const team: TeamMember[] = [
   {
     name: "Nanda Valeri",
     role: "PM / Business Strategist",
-    bio: "Memenangkan Rp20M+ sponsorship sebagai Koordinator Divisi Sponsorship Fikom Night. Liaison Officer Garuda Hacks 6.0 (hackathon terbesar Asia Tenggara). Workshop Speaker AI Lab untuk 50+ siswa SMA. KAMI UMN Scholarship Awardee — dipilih berdasarkan prestasi akademik dan kontribusi organisasi.",
+    bio: "Menggerakkan sisi bisnis dan eksekusi. Sebagai Koordinator Divisi Sponsorship Fikom Night, ia memenangkan pendanaan lebih dari Rp20 juta. Ia menjadi Liaison Officer Garuda Hacks 6.0, salah satu hackathon terbesar di Asia Tenggara, dan pembicara workshop AI Lab untuk lebih dari 50 siswa SMA. Penerima KAMI UMN Scholarship atas prestasi akademik dan kontribusi organisasi.",
     skills: ["Public Speaking", "Negotiation", "Event Management", "UX Design", "React", "React Native"],
     photo: "",
     github: "https://github.com/alestuff404",
