@@ -22,6 +22,13 @@ export const awards: Award[] = [
     dampak: "Membangun aplikasi mobile fungsional (bukan prototipe) untuk pembukaan rekening digital CIMB Niaga. UX design dengan warna ramah lansia tanpa mengorbankan brand identity.",
   },
   {
+    namaLomba: "Diponegoro Capital Market Days (DCMD)",
+    tingkat: "Outstanding Equity Research Paper",
+    tahun: 2025,
+    peran: "Kenny Valent Winalda Sembiring",
+    dampak: "Penghargaan riset ekuitas terbaik yang diterbitkan oleh Universitas Diponegoro, mewakili Universitas Multimedia Nusantara.",
+  },
+  {
     namaLomba: "SurabayaDev Developer Battle 2025",
     tingkat: "Juara 3 Nasional",
     tahun: 2025,
