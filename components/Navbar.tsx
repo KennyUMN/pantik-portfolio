@@ -9,6 +9,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
+  const toggleRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -18,7 +19,10 @@ export function Navbar() {
   }, []);
 
   const onKeyDown = useCallback((e: KeyboardEvent) => {
-    if (e.key === "Escape") setMenuOpen(false);
+    if (e.key === "Escape") {
+      setMenuOpen(false);
+      toggleRef.current?.focus();
+    }
   }, []);
 
   useEffect(() => {
@@ -28,7 +32,10 @@ export function Navbar() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [menuOpen, onKeyDown]);
 
-  const closeMenu = () => setMenuOpen(false);
+  const closeMenu = () => {
+    setMenuOpen(false);
+    toggleRef.current?.focus();
+  };
   const teamName = site.name.includes("[") ? "Bara" : site.name;
 
   return (
@@ -79,6 +86,7 @@ export function Navbar() {
 
           {/* Mobile toggle */}
           <button
+            ref={toggleRef}
             type="button"
             aria-label={menuOpen ? "Tutup menu navigasi" : "Buka menu navigasi"}
             aria-expanded={menuOpen}

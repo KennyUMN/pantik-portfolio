@@ -15,7 +15,7 @@ const steps = [
   {
     number: "03",
     title: "Validasi",
-    desc: "Prototipe kembali ke pengguna nyata. Umpan balik mentah lebih berharga dari pendapat siapapun di ruang rapat.",
+    desc: "Prototipe kembali ke pengguna nyata. Umpan balik mentah lebih berharga daripada pendapat siapa pun di ruang rapat.",
   },
   {
     number: "04",
@@ -32,7 +32,7 @@ export function HowWeWork() {
           Cara kami menuntaskan.
         </h2>
         <p className="text-[17px] text-secondary max-w-xl mb-14 leading-relaxed">
-          Proses yang berulang dan terukur. Inilah yang membuat juri yakin tim mampu menuntaskan apa yang dimulai.
+          Proses yang berulang dan terukur. Beginilah cara kami memastikan setiap yang dimulai benar benar selesai.
         </p>
       </Reveal>
 
@@ -44,7 +44,7 @@ export function HowWeWork() {
               <p className="font-heading text-3xl font-bold text-line mb-4 select-none tabular-nums">
                 {step.number}
               </p>
-              <p className="font-heading font-semibold text-ink mb-2">{step.title}</p>
+              <h3 className="font-heading font-semibold text-ink mb-2">{step.title}</h3>
               <p className="text-sm text-secondary leading-relaxed">{step.desc}</p>
             </div>
           </Reveal>

@@ -12,8 +12,8 @@ const roleStyle: Record<string, { badge: string; monogram: string }> = {
     monogram: "bg-accent-tint text-amber",
   },
   "Fullstack Developer": {
-    badge: "bg-red-50 text-ember border border-ember/20",
-    monogram: "bg-red-50 text-ember",
+    badge: "bg-bg-subtle text-ink border border-line",
+    monogram: "bg-bg-subtle text-ink",
   },
   "AI Engineer": {
     badge: "bg-primary-tint text-primary border border-primary/20",
@@ -78,9 +78,9 @@ export function Team() {
                 <div className="flex items-start gap-4 mb-5">
                   <MemberAvatar member={member} />
                   <div className="min-w-0 flex-1 pt-1">
-                    <p className="font-heading font-semibold text-ink leading-tight">
+                    <h3 className="font-heading font-semibold text-ink leading-tight">
                       {member.name}
-                    </p>
+                    </h3>
                     <span
                       className={cn(
                         "mt-2 inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium",

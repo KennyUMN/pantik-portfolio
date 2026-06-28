@@ -19,7 +19,7 @@ export function Capabilities() {
           Eksekusi dari hulu ke hilir, dari produk sampai infrastruktur.
         </h2>
         <p className="text-[17px] text-secondary max-w-2xl mb-10 leading-relaxed">
-          Juri teknis menilai apakah hero loop Pantik realistis dibangun tim ini. Inilah buktinya.
+          Setiap lapisan yang dibutuhkan Pantik, dari alur inti sampai infrastruktur, sudah pernah kami bangun. Inilah buktinya.
         </p>
       </Reveal>
 
@@ -34,7 +34,7 @@ export function Capabilities() {
                   <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary-tint text-primary">
                     <Icon size={14} />
                   </div>
-                  <span className="text-sm font-semibold text-ink">{group.nama}</span>
+                  <h3 className="text-sm font-semibold text-ink">{group.nama}</h3>
                 </div>
 
                 {/* Chips — wrapping row */}

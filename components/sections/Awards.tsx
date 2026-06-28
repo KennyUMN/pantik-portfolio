@@ -10,7 +10,7 @@ export function Awards() {
     <Section id="awards" subtle>
       <Reveal>
         <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-2">
-          Track record yang dapat diperiksa.
+          Rekam jejak yang dapat diperiksa.
         </h2>
         <p className="text-[17px] text-secondary max-w-2xl mb-12 leading-relaxed">
           Bukti bahwa tim ini terbiasa menuntaskan dan menang.
@@ -26,7 +26,7 @@ export function Awards() {
                   <Trophy size={18} />
                 </div>
                 <div>
-                  <p className="font-heading font-semibold text-ink">{award.namaLomba}</p>
+                  <h3 className="font-heading font-semibold text-ink">{award.namaLomba}</h3>
                   <p className="mt-1 text-sm text-secondary">
                     <span className="font-medium text-ink">{award.peran}.</span> {award.dampak}
                   </p>

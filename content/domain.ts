@@ -15,7 +15,7 @@ export const domain = {
     {
       judul: "Pemahaman Regulasi dan Posisi Produk",
       deskripsi:
-        "Kami memahami Perpres 115/2025, Permenkop 2/2024, logika lane Technology Provider Member, dan mekanisme pengalihan HAKI ke Kemenkop. Indeks Nyala kami posisikan sebagai primitive unik yang mengisi lane TPM, sesuatu yang belum dimiliki CoopTrade, CorpU, maupun vendor POS mana pun.",
+        "Kami memahami Perpres 115/2025, Permenkop 2/2024, logika jalur Technology Provider Member, dan mekanisme pengalihan HAKI ke Kemenkop. Indeks Nyala kami posisikan sebagai komponen unik yang mengisi jalur TPM, sesuatu yang belum dimiliki CoopTrade, CorpU, maupun penyedia POS mana pun.",
     },
     {
       judul: "Analisis Kegagalan Fintech Agrikultur",

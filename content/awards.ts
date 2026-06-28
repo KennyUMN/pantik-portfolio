@@ -12,7 +12,7 @@ export const awards: Award[] = [
     tingkat: "Juara 1 Nasional, Web Development",
     tahun: 2026,
     peran: "Lintang Balakosa Ardhana dan Nanda Valeri",
-    dampak: "Menjuarai kompetisi Web Development tingkat nasional antar mahasiswa dan mengungguli tim dari universitas negeri.",
+    dampak: "Menjuarai kompetisi Web Development tingkat nasional antarmahasiswa dan mengungguli tim dari universitas negeri.",
   },
   {
     namaLomba: "CIMB Niaga Pitching Day × UMN",
@@ -26,7 +26,7 @@ export const awards: Award[] = [
     tingkat: "Outstanding Equity Research Paper",
     tahun: 2025,
     peran: "Kenny Valent Winalda Sembiring",
-    dampak: "Penghargaan riset ekuitas terbaik yang diterbitkan oleh Universitas Diponegoro, mewakili Universitas Multimedia Nusantara.",
+    dampak: "Penghargaan riset ekuitas terbaik dari Diponegoro Capital Market Days, diraih Kenny mewakili Universitas Multimedia Nusantara.",
   },
   {
     namaLomba: "SurabayaDev Developer Battle 2025",

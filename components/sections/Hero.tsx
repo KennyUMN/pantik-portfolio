@@ -46,19 +46,18 @@ export function Hero() {
 
           {/* Right: editorial image */}
           <div className="relative hidden lg:block">
-            <div className="relative h-[480px] w-full overflow-hidden rounded-2xl">
+            <div className="relative h-[480px] w-full overflow-hidden rounded-xl">
               <Image
                 src="https://picsum.photos/seed/cooperative-village-indonesia/840/960"
-                alt="Koperasi desa merah putih"
+                alt="Ilustrasi koperasi desa"
                 fill
                 className="object-cover"
-                priority
                 sizes="420px"
               />
               {/* Overlay tint for brand cohesion */}
               <div
                 aria-hidden
-                className="absolute inset-0 rounded-2xl"
+                className="absolute inset-0 rounded-xl"
                 style={{
                   background:
                     "linear-gradient(160deg, rgba(14,79,110,0.12) 0%, transparent 60%)",

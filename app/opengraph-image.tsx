@@ -14,7 +14,7 @@ export default function OgImage() {
     (
       <div
         style={{
-          background: "#0F1115",
+          background: "#ffffff",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -26,65 +26,80 @@ export default function OgImage() {
           overflow: "hidden",
         }}
       >
-        {/* Amber glow */}
+        {/* Soft brand warmth, top-right */}
         <div
           style={{
             position: "absolute",
-            top: "-200px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: "900px",
-            height: "600px",
+            top: "-260px",
+            right: "-160px",
+            width: "720px",
+            height: "560px",
             borderRadius: "50%",
             background:
-              "radial-gradient(ellipse at center, rgba(245,158,11,0.15) 0%, transparent 70%)",
+              "radial-gradient(ellipse at center, rgba(224,130,12,0.10) 0%, transparent 70%)",
+          }}
+        />
+        {/* Teal edge accent */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "10px",
+            height: "100%",
+            background: "#0e4f6e",
           }}
         />
 
         {/* Top: event label */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "12px",
-          }}
-        >
+        <div style={{ display: "flex", alignItems: "center" }}>
           <div
             style={{
-              background: "rgba(245,158,11,0.15)",
-              border: "1px solid rgba(245,158,11,0.3)",
+              background: "rgba(14,79,110,0.08)",
+              border: "1px solid rgba(14,79,110,0.22)",
               borderRadius: "100px",
-              padding: "6px 16px",
-              color: "#F59E0B",
+              padding: "8px 18px",
+              color: "#0e4f6e",
               fontSize: "14px",
               fontWeight: 600,
-              letterSpacing: "0.1em",
+              letterSpacing: "0.08em",
               textTransform: "uppercase",
             }}
           >
-            ⚡ Hackathon Digital Cooperatives Expo 2026
+            Hackathon Digital Cooperatives Expo 2026
           </div>
         </div>
 
         {/* Middle: main content */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-          <div
-            style={{
-              fontSize: "72px",
-              fontWeight: 700,
-              color: "#E7E9EE",
-              lineHeight: 1.05,
-              letterSpacing: "-0.02em",
-            }}
-          >
-            {teamName}
+        <div style={{ display: "flex", flexDirection: "column", gap: "22px" }}>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
+            <span
+              style={{
+                fontSize: "92px",
+                fontWeight: 700,
+                color: "#0b1f33",
+                lineHeight: 1,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              {teamName}
+            </span>
+            <span
+              style={{
+                width: "16px",
+                height: "16px",
+                borderRadius: "50%",
+                background: "#e0820c",
+                marginTop: "16px",
+              }}
+            />
           </div>
           <div
             style={{
-              fontSize: "28px",
-              color: "#6B7280",
-              lineHeight: 1.4,
-              maxWidth: "700px",
+              fontSize: "30px",
+              color: "#45566a",
+              lineHeight: 1.35,
+              maxWidth: "760px",
             }}
           >
             {tagline}
@@ -92,15 +107,15 @@ export default function OgImage() {
           <div
             style={{
               fontSize: "22px",
-              color: "#F59E0B",
-              fontWeight: 500,
+              color: "#0e4f6e",
+              fontWeight: 600,
             }}
           >
             Pantik × Indeks Nyala. Lapisan aktivasi koperasi desa.
           </div>
         </div>
 
-        {/* Bottom: amber bar */}
+        {/* Bottom bar */}
         <div
           style={{
             display: "flex",
@@ -108,26 +123,20 @@ export default function OgImage() {
             justifyContent: "space-between",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "12px",
-            }}
-          >
+          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             <div
               style={{
                 width: "40px",
                 height: "4px",
-                background: "#F59E0B",
+                background: "#e0820c",
                 borderRadius: "2px",
               }}
             />
-            <span style={{ color: "#9CA3AF", fontSize: "16px" }}>
+            <span style={{ color: "#6b7c8c", fontSize: "16px" }}>
               Kemenkop RI × PEBS FEB UI
             </span>
           </div>
-          <span style={{ color: "#6B7280", fontSize: "14px" }}>2026</span>
+          <span style={{ color: "#6b7c8c", fontSize: "14px" }}>2026</span>
         </div>
       </div>
     ),

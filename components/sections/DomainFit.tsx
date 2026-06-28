@@ -7,17 +7,17 @@ const regulasiItems = [
   {
     icon: Scroll,
     label: "Perpres 115/2025",
-    desc: "Kerangka yang mewajibkan rantai pasok Makan Bergizi Gratis menyerap produk koperasi lokal. Pantik mengaktifkan koperasi menuju kewajiban itu.",
+    desc: "Kerangka yang mewajibkan rantai pasok Makan Bergizi Gratis menyerap produk koperasi lokal. Pantik menyiapkan koperasi agar mampu memenuhi kewajiban itu.",
   },
   {
     icon: Scale,
     label: "Permenkop 2/2024",
-    desc: "Regulasi pelaporan koperasi digital. Setiap artefak Pantik selaras dengan ketentuannya dan tergenerate otomatis.",
+    desc: "Regulasi pelaporan koperasi digital. Setiap artefak Pantik selaras dengan ketentuannya dan dihasilkan otomatis.",
   },
   {
     icon: Handshake,
-    label: "Lane TPM dan HAKI",
-    desc: "Jalur masuk resmi ke ekosistem Kemenkop. Tim memahami implikasi pengalihan HAKI dan syarat lane Technology Provider Member.",
+    label: "Jalur TPM dan HAKI",
+    desc: "Jalur masuk resmi ke ekosistem Kemenkop. Tim memahami implikasi pengalihan HAKI dan syarat jalur Technology Provider Member.",
   },
 ];
 
@@ -56,9 +56,9 @@ export function DomainFit() {
                     <Icon size={16} />
                   </div>
                   <div>
-                    <p className="font-heading font-semibold text-ink text-sm mb-1">
+                    <h3 className="font-heading font-semibold text-ink text-sm mb-1">
                       {poin.judul}
-                    </p>
+                    </h3>
                     <p className="text-sm text-secondary leading-relaxed">{poin.deskripsi}</p>
                   </div>
                 </div>
@@ -86,9 +86,9 @@ export function DomainFit() {
                     <div className="absolute -left-[21px] top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-primary-tint border-2 border-white ring-1 ring-primary/20">
                       <Icon size={10} className="text-primary" />
                     </div>
-                    <p className="font-heading font-semibold text-ink text-sm mb-1">
+                    <h3 className="font-heading font-semibold text-ink text-sm mb-1">
                       {reg.label}
-                    </p>
+                    </h3>
                     <p className="text-xs text-secondary leading-relaxed">{reg.desc}</p>
                   </div>
                 );
