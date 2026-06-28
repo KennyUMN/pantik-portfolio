@@ -1,4 +1,4 @@
-export type MemberRole = "PM / Business Strategist" | "Fullstack Developer" | "AI Engineer / Designer";
+export type MemberRole = "PM / Business Strategist" | "Fullstack Developer" | "AI Engineer";
 
 export interface TeamMember {
   name: string;
@@ -13,27 +13,27 @@ export interface TeamMember {
 export const team: TeamMember[] = [
   {
     name: "Lintang Balakosa Ardhana",
-    role: "PM / Business Strategist",
-    bio: "Menggabungkan riset ekosistem dan strategi produk untuk menemukan posisi unik Pantik. Memimpin analisis mendalam 83.363 profil SIMKOPDES yang kosong dan membangun narasi 'activation layer, bukan platform baru'.",
-    skills: ["Product Strategy", "Market Research", "Business Analysis", "UX Research", "Competitive Intelligence"],
+    role: "Fullstack Developer",
+    bio: "Membangun platform dari nol: Bisasinema (Coursera-style LMS + Midtrans, Rp20M+ tiket terjual), Brako Trace OS (digitalisasi pipeline kopi cherry-to-warehouse), dan SaaS multi-tenant Tera untuk ekspor specialty coffee. Tech Lead & APM di dua perusahaan aktif.",
+    skills: ["Next.js", "FastAPI", "TypeScript", "PostgreSQL", "React", "NestJS", "Python", "Docker"],
     photo: "",
-    github: "[github.com/lintang-balakosa]",
-    linkedin: "[linkedin.com/in/lintang-balakosa]",
+    github: "https://github.com/codezeros18",
+    linkedin: "https://linkedin.com/in/lintangbalakosa",
   },
   {
     name: "Kenny Valent Winalda Sembiring",
-    role: "Fullstack Developer",
-    bio: "Membangun produk dari API hingga antarmuka. Merancang dan mengimplementasikan infrastruktur teknis Pantik — dari Indeks Nyala Engine, 1-Click SIMKOPDES Export, hingga PO Financing Dossier Generator.",
-    skills: ["Next.js", "FastAPI", "TypeScript", "PostgreSQL", "Python"],
+    role: "AI Engineer",
+    bio: "Membangun infrastruktur AI lokal: FinRAG-ID (RAG pipeline hybrid BM25 + BGE-M3 untuk dokumen keuangan Indonesia), PPE Detection System (YOLOv9c semi-supervised), dan self-hosted AI homeserver (Ollama + OpenRouter + Tailscale). Fokus di LLM infrastructure dan local-first AI.",
+    skills: ["Python", "LlamaIndex", "RAG", "YOLOv9", "Ollama", "Docker", "FastAPI", "RAGAS"],
     photo: "",
     github: "https://github.com/KennyUMN",
     linkedin: "[linkedin.com/in/kenny-valent]",
   },
   {
     name: "Nanda Valeri",
-    role: "AI Engineer / Designer",
-    bio: "Membangun logika scoring Indeks Nyala dan counterparty graph anti-gaming yang belajar dari kegagalan TaniFund dan eFishery. Merancang visual flow Pantik dari peta panas hingga PO Dossier.",
-    skills: ["Python", "NetworkX", "Scoring Model", "Figma", "Data Pipeline"],
+    role: "PM / Business Strategist",
+    bio: "Memimpin riset ekosistem yang menemukan posisi unik Pantik sebagai activation layer. Menganalisis 83.363 profil SIMKOPDES kosong, membangun narasi 'raknya kosong, kami yang ngisi', dan merancang Two-Tier Activation Model serta logika Indeks Nyala anti-gaming.",
+    skills: ["Product Strategy", "Market Research", "Business Analysis", "UX Research", "Figma"],
     photo: "",
     github: "[github.com/nanda-valeri]",
     linkedin: "[linkedin.com/in/nanda-valeri]",

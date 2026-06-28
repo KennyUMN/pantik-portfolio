@@ -15,7 +15,7 @@ const roleStyle: Record<string, { badge: string; monogram: string }> = {
     badge: "bg-red-50 text-ember border border-ember/20",
     monogram: "bg-red-50 text-ember",
   },
-  "AI Engineer / Designer": {
+  "AI Engineer": {
     badge: "bg-primary-tint text-primary border border-primary/20",
     monogram: "bg-primary-tint text-primary",
   },
