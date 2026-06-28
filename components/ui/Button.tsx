@@ -8,23 +8,22 @@ interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   children: ReactNode;
-  asChild?: boolean;
   href?: string;
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-amber text-ink font-semibold hover:bg-spark active:scale-[0.97] transition-all duration-150",
+    "bg-primary text-white font-semibold hover:bg-primary-hover active:scale-[0.97] transition-all duration-150 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
   secondary:
-    "border border-amber text-amber hover:bg-amber/10 active:scale-[0.97] transition-all duration-150",
+    "border border-line-dark text-ink hover:bg-paper active:scale-[0.97] transition-all duration-150 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
   ghost:
-    "text-text-dark hover:text-amber active:scale-[0.97] transition-all duration-150",
+    "text-secondary hover:text-primary active:scale-[0.97] transition-all duration-150 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
   sm: "px-4 py-2 text-sm",
   md: "px-6 py-3 text-base",
-  lg: "px-8 py-4 text-lg",
+  lg: "px-7 py-3.5 text-base",
 };
 
 export function Button({
@@ -36,7 +35,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const classes = cn(
-    "inline-flex items-center justify-center gap-2 rounded-md font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber",
+    "inline-flex items-center justify-center gap-2 rounded-xl font-semibold focus-visible:outline-none whitespace-nowrap",
     variantClasses[variant],
     sizeClasses[size],
     className

@@ -10,7 +10,6 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
-  // Transparent → solid on scroll
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     onScroll();
@@ -18,7 +17,6 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Escape key closes menu
   const onKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === "Escape") setMenuOpen(false);
   }, []);
@@ -26,13 +24,12 @@ export function Navbar() {
   useEffect(() => {
     if (!menuOpen) return;
     document.addEventListener("keydown", onKeyDown);
-    // Move focus to first menu item
     firstLinkRef.current?.focus();
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [menuOpen, onKeyDown]);
 
   const closeMenu = () => setMenuOpen(false);
-  const teamName = site.name.includes("[") ? "Tim" : site.name;
+  const teamName = site.name.includes("[") ? "Bara" : site.name;
 
   return (
     <>
@@ -40,33 +37,31 @@ export function Navbar() {
         className={cn(
           "fixed inset-x-0 top-0 z-50 transition-all duration-300",
           scrolled || menuOpen
-            ? "border-b border-line-dark bg-ink/95 backdrop-blur-md shadow-lg shadow-ink/20"
+            ? "border-b border-line bg-white/95 backdrop-blur-md shadow-sm"
             : "border-b border-transparent bg-transparent"
         )}
       >
         <nav
           aria-label="Navigasi utama"
-          className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 lg:px-8"
+          className="mx-auto flex h-16 max-w-[1120px] items-center justify-between px-6 lg:px-8"
         >
           {/* Wordmark */}
           <a
             href="/"
-            className="font-heading text-lg font-bold text-text-dark transition-colors hover:text-amber focus-visible:outline-amber"
+            className="font-heading text-lg font-bold text-ink transition-colors hover:text-primary focus-visible:outline-primary"
             onClick={closeMenu}
           >
             {teamName}
+            <span className="ml-1 inline-block h-1.5 w-1.5 translate-y-[-4px] rounded-full bg-amber align-middle" aria-hidden />
           </a>
 
-          {/* Desktop nav links */}
-          <ul
-            className="hidden items-center gap-1 lg:flex"
-            role="list"
-          >
+          {/* Desktop nav */}
+          <ul className="hidden items-center gap-1 lg:flex" role="list">
             {site.nav.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-muted-dark transition-colors hover:bg-surface hover:text-text-dark"
+                  className="rounded-lg px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-paper hover:text-ink"
                 >
                   {item.label}
                 </a>
@@ -77,7 +72,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <a
             href="#contact"
-            className="hidden lg:inline-flex items-center gap-2 rounded-md bg-amber px-4 py-2 text-sm font-semibold text-ink transition-all duration-150 hover:bg-spark active:scale-[0.97]"
+            className="hidden lg:inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-white transition-all duration-150 hover:bg-primary-hover active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
           >
             Hubungi Kami
           </a>
@@ -89,13 +84,13 @@ export function Navbar() {
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             onClick={() => setMenuOpen((v) => !v)}
-            className="flex h-10 w-10 items-center justify-center rounded-md text-text-dark transition-colors hover:bg-surface hover:text-amber lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-secondary transition-colors hover:bg-paper hover:text-ink lg:hidden"
           >
             {menuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </nav>
 
-        {/* Mobile menu panel */}
+        {/* Mobile menu */}
         <div
           id="mobile-menu"
           role="dialog"
@@ -103,7 +98,7 @@ export function Navbar() {
           aria-modal="false"
           hidden={!menuOpen}
           className={cn(
-            "border-t border-line-dark bg-ink/98 backdrop-blur-md lg:hidden",
+            "border-t border-line bg-white lg:hidden",
             !menuOpen && "hidden"
           )}
         >
@@ -114,7 +109,7 @@ export function Navbar() {
                   ref={i === 0 ? firstLinkRef : undefined}
                   href={item.href}
                   onClick={closeMenu}
-                  className="flex w-full items-center border-b border-line-dark/40 py-4 text-base font-medium text-text-dark transition-colors hover:text-amber last:border-0"
+                  className="flex w-full items-center border-b border-line py-4 text-base font-medium text-secondary transition-colors hover:text-primary last:border-0"
                 >
                   {item.label}
                 </a>
@@ -124,7 +119,7 @@ export function Navbar() {
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="flex w-full items-center justify-center rounded-md bg-amber py-3 text-sm font-semibold text-ink transition-all hover:bg-spark active:scale-[0.97]"
+                className="flex w-full items-center justify-center rounded-xl bg-primary py-3 text-sm font-semibold text-white transition-all hover:bg-primary-hover active:scale-[0.97]"
               >
                 Hubungi Kami
               </a>
@@ -133,11 +128,10 @@ export function Navbar() {
         </div>
       </header>
 
-      {/* Backdrop — closes menu when tapping outside on mobile */}
       {menuOpen && (
         <div
           aria-hidden
-          className="fixed inset-0 z-40 lg:hidden"
+          className="fixed inset-0 z-40 bg-ink/20 lg:hidden"
           onClick={closeMenu}
         />
       )}

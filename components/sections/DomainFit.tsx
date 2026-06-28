@@ -1,5 +1,6 @@
 import { domain } from "@/content/domain";
-import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/Reveal";
 import { Landmark, Map, Microscope, Scale, Scroll, Handshake } from "lucide-react";
 
@@ -29,82 +30,58 @@ const evidenceIcons: Record<string, React.ElementType> = {
 
 export function DomainFit() {
   return (
-    <section
-      id="domain"
-      className="relative py-24 lg:py-32 overflow-hidden border-t border-teal/20"
-      style={{
-        background:
-          "linear-gradient(180deg, var(--color-ink) 0%, color-mix(in oklch, var(--color-teal) 6%, var(--color-ink)) 50%, var(--color-ink) 100%)",
-      }}
-    >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 70% 40% at 50% 0%, color-mix(in oklch, var(--color-teal) 12%, transparent) 0%, transparent 70%)",
-        }}
-      />
+    <Section id="domain">
+      <Reveal>
+        <SectionHeader
+          eyebrow="Keselarasan Domain"
+          heading="Kami berbicara bahasa Kemenkop."
+          lead={domain.ringkasan}
+        />
+        <p className="mb-12 text-sm italic text-secondary">
+          Sinyal paling membedakan di mata juri kementerian dan akademisi adalah tim yang paham regulasi, bukan sekadar tim yang bisa koding.
+        </p>
+      </Reveal>
 
-      <Container>
-        <Reveal>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-teal">
-            Keselarasan Domain
-          </p>
-          <h2 className="font-heading text-3xl font-bold text-text-dark lg:text-4xl mb-4">
-            Kami berbicara bahasa Kemenkop.
-          </h2>
-          <p className="text-muted-dark max-w-2xl mb-6 leading-relaxed">
-            {domain.ringkasan}
-          </p>
-          <p className="text-sm text-muted-dark max-w-2xl mb-16 italic">
-            Sinyal paling membedakan di mata juri kementerian dan akademisi adalah tim yang paham regulasi, bukan sekadar tim yang bisa koding.
-          </p>
-        </Reveal>
-
-        {/* Bukti riset */}
-        <div className="grid gap-5 md:grid-cols-3 mb-14">
-          {domain.buktiRiset.map((poin, i) => {
-            const Icon = evidenceIcons[poin.judul] ?? Landmark;
-            return (
-              <Reveal key={poin.judul} delay={i * 0.08}>
-                <div className="h-full rounded-2xl border border-teal/30 bg-teal/5 p-6 transition-colors hover:border-teal/60 hover:bg-teal/10">
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal/20 text-teal">
-                    <Icon size={18} />
-                  </div>
-                  <h3 className="font-heading font-semibold text-text-dark mb-2">
-                    {poin.judul}
-                  </h3>
-                  <p className="text-sm text-muted-dark leading-relaxed">{poin.deskripsi}</p>
+      {/* Bukti riset */}
+      <div className="grid gap-5 md:grid-cols-3 mb-12">
+        {domain.buktiRiset.map((poin, i) => {
+          const Icon = evidenceIcons[poin.judul] ?? Landmark;
+          return (
+            <Reveal key={poin.judul} delay={i * 0.08}>
+              <div className="h-full rounded-xl border border-primary/20 bg-primary-tint/30 p-6 transition-all duration-200 hover:border-primary/40 hover:bg-primary-tint/50">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-tint text-primary">
+                  <Icon size={18} />
                 </div>
-              </Reveal>
-            );
-          })}
-        </div>
+                <h3 className="font-heading font-semibold text-ink mb-2">{poin.judul}</h3>
+                <p className="text-sm text-secondary leading-relaxed">{poin.deskripsi}</p>
+              </div>
+            </Reveal>
+          );
+        })}
+      </div>
 
-        {/* Regulasi yang dipahami */}
-        <Reveal>
-          <h3 className="font-heading text-lg font-semibold text-text-dark mb-6">
-            Regulasi yang kami pahami
-          </h3>
-        </Reveal>
-        <div className="grid gap-4 md:grid-cols-3">
-          {regulasiItems.map((reg, i) => {
-            const Icon = reg.icon;
-            return (
-              <Reveal key={reg.label} delay={i * 0.07}>
-                <div className="rounded-xl border border-line-dark bg-surface/60 p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Icon size={16} className="text-teal shrink-0" />
-                    <span className="text-xs font-semibold text-teal">{reg.label}</span>
-                  </div>
-                  <p className="text-xs text-muted-dark leading-relaxed">{reg.desc}</p>
+      {/* Regulasi */}
+      <Reveal>
+        <h3 className="font-heading text-[17px] font-semibold text-ink mb-5">
+          Regulasi yang kami pahami
+        </h3>
+      </Reveal>
+      <div className="grid gap-4 md:grid-cols-3">
+        {regulasiItems.map((reg, i) => {
+          const Icon = reg.icon;
+          return (
+            <Reveal key={reg.label} delay={i * 0.07}>
+              <div className="rounded-xl border border-line bg-bg-subtle p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <Icon size={15} className="text-primary shrink-0" />
+                  <span className="text-xs font-semibold text-primary">{reg.label}</span>
                 </div>
-              </Reveal>
-            );
-          })}
-        </div>
-      </Container>
-    </section>
+                <p className="text-xs text-secondary leading-relaxed">{reg.desc}</p>
+              </div>
+            </Reveal>
+          );
+        })}
+      </div>
+    </Section>
   );
 }

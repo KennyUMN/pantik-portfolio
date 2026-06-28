@@ -21,7 +21,7 @@ export const capabilities: CapabilityGroup[] = [
     items: ["SQLite", "PostgreSQL", "Data Pipeline", "CSV/JSON Export", "Analytics"],
   },
   {
-    nama: "IoT",
+    nama: "Integrasi & API",
     items: ["QRIS Integration", "Webhook", "REST API", "PDF Generator"],
   },
 ];
