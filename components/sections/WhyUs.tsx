@@ -6,19 +6,19 @@ const pillars = [
   {
     icon: Target,
     label: "Kemudi Bisnis dan Produk",
-    desc: "[BUKTI_BISNIS — mis. juara nasional lomba X, pengalaman membangun produk Y yang dipakai Z pengguna]",
+    desc: "Lintang memimpin riset ekosistem yang membongkar posisi unik Pantik: bukan platform baru, tapi activation layer. Narasi 'Lo udah bangun supermarket mewah, tapi raknya kosong — kami yang ngisi' lahir dari analisis mendalam CoopTrade, CorpU, dan 83k profil SIMKOPDES.",
     number: "01",
   },
   {
     icon: Layers,
     label: "Kedalaman Fullstack dan AI",
-    desc: "[BUKTI_TEKNIS — mis. pengalaman membangun sistem fullstack dan model AI untuk kasus nyata]",
+    desc: "Kenny membangun seluruh infrastruktur teknis Pantik — dari Indeks Nyala Engine berbasis Python/NetworkX, 1-Click SIMKOPDES Export, hingga PO Financing Dossier Generator. Nanda merancang counterparty graph anti-gaming yang belajar langsung dari kegagalan TaniFund dan eFishery.",
     number: "02",
   },
   {
     icon: Globe,
     label: "Kesadaran Domain Koperasi",
-    desc: "[BUKTI_DOMAIN — mis. observasi langsung di koperasi X, riset Perpres 115/2025 dan Permenkop 2/2024]",
+    desc: "Kami membuka langsung profil Koperasi Pengiringan (Pemalang, Jateng): 9 komoditas terdaftar, semua nilai 0, 0 anggota dari 12.944 penduduk. Bukan satu koperasi — ini pola. Kami memahami Perpres 115/2025, Permenkop 2/2024, dan logika lane TPM/HAKI yang membuka ruang Indeks Nyala.",
     number: "03",
   },
 ];
