@@ -9,18 +9,18 @@ export interface SocialLink {
 }
 
 export const site = {
-  name: "[NAMA_TIM]",
-  tagline: "[TAGLINE_TIM]",
+  name: "Bara",
+  tagline: "Kami menyalakan yang sudah dibangun.",
   taglineDefault: "Kami menyalakan yang sudah dibangun.",
   headline: "Kami menyalakan koperasi yang sudah dibangun negara.",
   subheadline:
-    "[NAMA_TIM], [PRESTASI_PUNCAK], membangun Pantik untuk Hackathon Digital Cooperatives Expo 2026.",
-  email: "[EMAIL_KONTAK]",
+    "Tim Bara — peserta Hackathon Digital Cooperatives Expo 2026 (Kemenkop RI × PEBS FEB UI) — membangun Pantik sebagai activation layer untuk 83.363 koperasi merah putih.",
+  email: "phongpow@gmail.com",
   meta: {
-    title: "[NAMA_TIM] — Portofolio Teknis Tim",
+    title: "Bara — Portofolio Teknis Tim",
     description:
       "Tim yang memadukan strategi produk dan rekayasa teknis untuk ekonomi kerakyatan. Pembangun Pantik, lapisan aktivasi koperasi desa.",
-    url: "https://[NAMA_TIM].vercel.app",
+    url: "https://pantik-portfolio.vercel.app",
     ogImage: "/og.png",
   },
   nav: [
@@ -31,7 +31,7 @@ export const site = {
     { label: "Kontak", href: "#contact" },
   ] satisfies NavItem[],
   social: [
-    { platform: "github", url: "[LINK_GITHUB_TIM]" },
-    { platform: "linkedin", url: "[LINK_LINKEDIN_TIM]" },
+    { platform: "github", url: "https://github.com/KennyUMN/pantik-portfolio" },
+    { platform: "email", url: "mailto:phongpow@gmail.com" },
   ] satisfies SocialLink[],
 };

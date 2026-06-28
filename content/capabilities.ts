@@ -6,22 +6,22 @@ export interface CapabilityGroup {
 export const capabilities: CapabilityGroup[] = [
   {
     nama: "Fullstack",
-    items: ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "[DATABASE_LAIN]"],
+    items: ["React", "Next.js", "Node.js", "TypeScript", "FastAPI", "PostgreSQL"],
   },
   {
     nama: "AI / ML",
-    items: ["[NLP_TOOL]", "[ML_FRAMEWORK]", "Scoring Model", "[AI_TOOL_LAIN]"],
+    items: ["Python", "NetworkX", "Scoring Model", "Counterparty Graph", "NLP"],
   },
   {
     nama: "Design",
-    items: ["UI/UX", "Figma", "Design System", "[TOOL_DESIGN_LAIN]"],
+    items: ["Figma", "UI/UX", "TailwindCSS", "Design System", "Leaflet.js"],
   },
   {
     nama: "Data",
-    items: ["[DATA_TOOL_1]", "[DATA_TOOL_2]", "[VISUALISASI_TOOL]"],
+    items: ["SQLite", "PostgreSQL", "Data Pipeline", "CSV/JSON Export", "Analytics"],
   },
   {
     nama: "IoT",
-    items: ["[IOT_PLATFORM]", "[IOT_PROTOKOL]"],
+    items: ["QRIS Integration", "Webhook", "REST API", "PDF Generator"],
   },
 ];
