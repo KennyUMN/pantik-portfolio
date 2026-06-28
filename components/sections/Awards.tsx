@@ -1,6 +1,5 @@
 import { awards } from "@/content/awards";
 import { Section } from "@/components/ui/Section";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/Reveal";
 import { Trophy } from "lucide-react";
 
@@ -10,10 +9,9 @@ export function Awards() {
   return (
     <Section id="awards" subtle>
       <Reveal>
-        <SectionHeader
-          eyebrow="Prestasi"
-          heading="Track record yang dapat diperiksa."
-        />
+        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-12">
+          Track record yang dapat diperiksa.
+        </h2>
       </Reveal>
 
       <div className="space-y-3">

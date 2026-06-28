@@ -1,6 +1,5 @@
 import { experience } from "@/content/experience";
 import { Section } from "@/components/ui/Section";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/Reveal";
 import { Briefcase } from "lucide-react";
 
@@ -19,10 +18,9 @@ export function Experience() {
   return (
     <Section id="experience">
       <Reveal>
-        <SectionHeader
-          eyebrow="Pengalaman Kerja"
-          heading="Jam terbang di luar kampus."
-        />
+        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-12">
+          Jam terbang di luar kampus.
+        </h2>
       </Reveal>
 
       <div className="space-y-12">

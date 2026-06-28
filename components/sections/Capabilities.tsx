@@ -1,7 +1,5 @@
 import { capabilities } from "@/content/capabilities";
 import { Section } from "@/components/ui/Section";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Tag } from "@/components/ui/Tag";
 import { Reveal } from "@/components/Reveal";
 import { Code2, Cpu, Paintbrush, BarChart2, Plug } from "lucide-react";
 
@@ -15,33 +13,45 @@ const groupIcons: Record<string, React.ElementType> = {
 
 export function Capabilities() {
   return (
-    <Section id="capabilities" subtle>
+    <Section id="capabilities">
       <Reveal>
-        <SectionHeader
-          eyebrow="Kapabilitas Teknis"
-          heading="Eksekusi end-to-end, dari produk ke infrastruktur."
-          lead="Juri teknis menilai apakah hero loop Pantik realistis dibangun tim ini. Berikut buktinya."
-        />
+        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-2">
+          Eksekusi end-to-end, dari produk ke infrastruktur.
+        </h2>
+        <p className="text-[17px] text-secondary max-w-2xl mb-10 leading-relaxed">
+          Juri teknis menilai apakah hero loop Pantik realistis dibangun tim ini. Berikut buktinya.
+        </p>
       </Reveal>
 
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {capabilities.map((group, i) => {
+      <div className="space-y-6">
+        {capabilities.map((group, gi) => {
           const Icon = groupIcons[group.nama] ?? Code2;
           return (
-            <Reveal key={group.nama} delay={i * 0.07}>
-              <div className="group h-full rounded-xl border border-line bg-white p-6 transition-all duration-200 hover:border-primary/30 hover:shadow-sm">
-                <div className="mb-5 flex items-center gap-3">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-tint text-primary transition-colors group-hover:bg-primary/15">
-                    <Icon size={18} />
+            <Reveal key={group.nama} delay={gi * 0.06}>
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-6">
+                {/* Group label — fixed width, left-aligned */}
+                <div className="flex shrink-0 items-center gap-2 sm:w-44 sm:pt-1">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary-tint text-primary">
+                    <Icon size={14} />
                   </div>
-                  <h3 className="font-heading font-semibold text-ink">{group.nama}</h3>
+                  <span className="text-sm font-semibold text-ink">{group.nama}</span>
                 </div>
-                <div className="flex flex-wrap gap-1.5">
+
+                {/* Chips — wrapping row */}
+                <div className="flex flex-wrap gap-2">
                   {group.items.map((item) => (
-                    <Tag key={item}>{item}</Tag>
+                    <span
+                      key={item}
+                      className="rounded-full border border-line bg-bg-subtle px-3.5 py-1.5 text-[13px] font-medium text-secondary transition-colors hover:border-primary/30 hover:bg-primary-tint hover:text-primary"
+                    >
+                      {item}
+                    </span>
                   ))}
                 </div>
               </div>
+              {gi < capabilities.length - 1 && (
+                <div className="mt-6 border-t border-line" />
+              )}
             </Reveal>
           );
         })}

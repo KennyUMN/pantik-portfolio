@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { team, type TeamMember } from "@/content/team";
 import { Section } from "@/components/ui/Section";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Tag } from "@/components/ui/Tag";
 import { Reveal } from "@/components/Reveal";
 import { ExternalLink } from "lucide-react";
@@ -62,11 +61,12 @@ export function Team() {
   return (
     <Section id="team">
       <Reveal>
-        <SectionHeader
-          eyebrow="Tim"
-          heading="Komposisi yang sengaja dirancang."
-          lead="Kemudi bisnis dan kedalaman teknis dalam satu tim — itulah yang kriteria lomba minta, dan itulah yang kami miliki."
-        />
+        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-3">
+          Komposisi yang sengaja dirancang.
+        </h2>
+        <p className="text-[17px] text-secondary max-w-2xl mb-12 leading-relaxed">
+          Kemudi bisnis dan kedalaman teknis dalam satu tim — itulah yang kriteria lomba minta, dan itulah yang kami miliki.
+        </p>
       </Reveal>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

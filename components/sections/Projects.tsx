@@ -1,6 +1,5 @@
 import { projects } from "@/content/projects";
 import { Section } from "@/components/ui/Section";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { Tag } from "@/components/ui/Tag";
 import { Reveal } from "@/components/Reveal";
@@ -13,10 +12,9 @@ export function Projects() {
   return (
     <Section id="projects" subtle>
       <Reveal>
-        <SectionHeader
-          eyebrow="Proyek Lain"
-          heading="Bukti kemampuan lintas domain."
-        />
+        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-12">
+          Bukti kemampuan lintas domain.
+        </h2>
       </Reveal>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

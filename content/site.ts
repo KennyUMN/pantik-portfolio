@@ -20,7 +20,7 @@ export const site = {
   headline: "Kami menyalakan koperasi yang sudah dibangun negara.",
   subheadline:
     "Tim Bara, peserta Hackathon Digital Cooperatives Expo 2026 (Kemenkop RI x PEBS FEB UI), membangun Pantik sebagai activation layer bagi 83.363 koperasi merah putih.",
-  email: "phongpow@gmail.com",
+  email: "kennyvws1@gmail.com",
   meta: {
     title: "Bara — Portofolio Teknis Tim",
     description:
@@ -43,6 +43,6 @@ export const site = {
   ] satisfies NavItem[],
   social: [
     { platform: "github", url: "https://github.com/KennyUMN/pantik-portfolio" },
-    { platform: "email", url: "mailto:phongpow@gmail.com" },
+    { platform: "email", url: "mailto:kennyvws1@gmail.com" },
   ] satisfies SocialLink[],
 };

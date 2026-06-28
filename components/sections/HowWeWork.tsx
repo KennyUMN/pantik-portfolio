@@ -1,64 +1,54 @@
 import { Section } from "@/components/ui/Section";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/Reveal";
-import { Search, FlaskConical, Map, RefreshCw } from "lucide-react";
 
 const steps = [
   {
-    icon: Search,
     number: "01",
     title: "Riset",
-    desc: "Sebelum menulis satu baris kode, kami pergi ke lapangan. Wawancara pengguna, observasi konteks nyata, dan validasi asumsi paling awal.",
+    desc: "Sebelum menulis satu baris kode, kami pergi ke lapangan. Observasi konteks nyata, validasi asumsi paling awal.",
   },
   {
-    icon: FlaskConical,
     number: "02",
     title: "Prototipe",
-    desc: "Hipotesis diujikan secepat mungkin dalam bentuk konkret, bukan deck. Prototipe fungsional lebih jujur daripada mockup yang sempurna.",
+    desc: "Hipotesis diujikan secepat mungkin dalam bentuk konkret. Prototipe fungsional lebih jujur daripada mockup sempurna.",
   },
   {
-    icon: Map,
     number: "03",
-    title: "Validasi Lapangan",
+    title: "Validasi",
     desc: "Prototipe kembali ke pengguna nyata. Umpan balik mentah lebih berharga dari pendapat siapapun di ruang rapat.",
   },
   {
-    icon: RefreshCw,
     number: "04",
     title: "Iterasi",
-    desc: "Tidak ada produk yang jadi setelah satu putaran. Kami ulang siklusnya sampai sinyal validasi cukup kuat untuk melanjutkan.",
+    desc: "Tidak ada produk yang jadi setelah satu putaran. Kami ulang siklusnya sampai sinyal validasi cukup kuat.",
   },
 ];
 
 export function HowWeWork() {
   return (
-    <Section id="how-we-work" subtle>
+    <Section id="how-we-work">
       <Reveal>
-        <SectionHeader
-          eyebrow="Cara Kami Bekerja"
-          heading="Disiplin eksekusi, bukan retorika."
-          lead="Proses yang berulang dan terukur adalah yang membuat juri percaya tim bisa menyelesaikan, bukan hanya memulai."
-        />
+        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-2">
+          Disiplin eksekusi, bukan retorika.
+        </h2>
+        <p className="text-[17px] text-secondary max-w-xl mb-14 leading-relaxed">
+          Proses yang berulang dan terukur membuat juri percaya tim bisa menyelesaikan, bukan hanya memulai.
+        </p>
       </Reveal>
 
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {steps.map((step, i) => {
-          const Icon = step.icon;
-          return (
-            <Reveal key={step.title} delay={i * 0.08}>
-              <div className="group relative h-full rounded-xl border border-line bg-white p-6 transition-all duration-200 hover:border-primary/30 hover:shadow-sm">
-                <div className="absolute right-5 top-5 font-heading text-4xl font-bold text-line select-none transition-colors group-hover:text-primary/10">
-                  {step.number}
-                </div>
-                <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary-tint text-primary transition-colors group-hover:bg-primary/15">
-                  <Icon size={18} />
-                </div>
-                <h3 className="font-heading font-semibold text-ink mb-3">{step.title}</h3>
-                <p className="text-sm text-secondary leading-relaxed">{step.desc}</p>
-              </div>
-            </Reveal>
-          );
-        })}
+      {/* Strip layout — border box, internal dividers via pseudo-grid */}
+      <div className="grid grid-cols-1 divide-y divide-line rounded-xl border border-line overflow-hidden sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4">
+        {steps.map((step, i) => (
+          <Reveal key={step.title} delay={i * 0.07}>
+            <div className={`p-6 lg:p-8 h-full ${i < steps.length - 1 ? "sm:border-r sm:border-line" : ""}`}>
+              <p className="font-heading text-3xl font-bold text-line mb-4 select-none tabular-nums">
+                {step.number}
+              </p>
+              <p className="font-heading font-semibold text-ink mb-2">{step.title}</p>
+              <p className="text-sm text-secondary leading-relaxed">{step.desc}</p>
+            </div>
+          </Reveal>
+        ))}
       </div>
     </Section>
   );

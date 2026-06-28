@@ -1,6 +1,5 @@
 import { organizations } from "@/content/organizations";
 import { Section } from "@/components/ui/Section";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { Reveal } from "@/components/Reveal";
 import { Users } from "lucide-react";
@@ -11,10 +10,9 @@ export function Organizations() {
   return (
     <Section id="organizations">
       <Reveal>
-        <SectionHeader
-          eyebrow="Organisasi dan Komunitas"
-          heading="Aktif di luar pekerjaan."
-        />
+        <h2 className="font-heading text-3xl font-bold text-ink lg:text-4xl mb-12">
+          Aktif di luar pekerjaan.
+        </h2>
       </Reveal>
 
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
